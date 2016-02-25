@@ -1,3 +1,3 @@
 <?php
- echo "This is an api";
+ echo "This is an api naja";
 ?>
