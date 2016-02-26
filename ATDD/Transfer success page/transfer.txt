@@ -14,7 +14,7 @@ Open Browser
     Wait Until Page Contains Element   id=accountList
     Click Element    id=accountList
     Wait Until Page Contains Element    id=account2
-    Input Text    id=account2 
+    Click Element    id=account2 
     Wait Until Page Contains Element   id=amount
     Input Text    id=amount   3500
     Wait Until Page Contains Element   id=transfer
