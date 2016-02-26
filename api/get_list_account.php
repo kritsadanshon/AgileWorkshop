@@ -1,7 +1,7 @@
 <?php
 	include './connect.php';
  
-	var account_id = $_GET["id"];
+	$account_id = $_GET["id"];
 	
 	$query_string = "SELECT `account_id`,`account_name`,`bank_code`,`acc_type`,`logo_path` FROM `account`";
 	$result_query = mysqli_query($link, $query_string);
