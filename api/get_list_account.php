@@ -3,9 +3,8 @@
  
 	var account_id = $GET["id"];
 	
-	$query_string = "SELECT * FROM `ACCOUNT`;";
-	$result_query = $link->query($query_string);
-	while($row = $result_query->fetch_assoc()){
+	$result_query = mysqli_query($link, $query_string);
+	while($row = mysqli_fetch_assoc($result_query)){
 		var_dump($row);
 	}
 ?>
