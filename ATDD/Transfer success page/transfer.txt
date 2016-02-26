@@ -4,11 +4,12 @@ Library           Selenium2Library
 
 
 *** Variables ***
+${URL}    http://192.168.1.113  
 ${owner}    ประธาน   ด่านสกุลเจริญกิจ  6291085597
 
 *** Test Cases ***
 Open Browser
-    Open Browser    http://192.168.1.113   chrome
+    Open Browser    ${URL}
     Wait Until Page Contains Element   id=owner
     Wait Until Page Contains    ${owner} 
     Wait Until Page Contains Element   id=accountList
