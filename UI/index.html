@@ -15,8 +15,8 @@ $("#Submit").click(function(){
         accName: $("#AccountId").val(),
 		bankName: $("#BankCode").val()
     },
-    function(data, status){
-        alert("Data: " + data + "\nStatus: " + status);
+    function(data, status){    	
+        alert(data.Message);
     });
 });
 </script>
@@ -35,7 +35,7 @@ $("#Submit").click(function(){
 <tr>
 <td>ชื่อธนาคาร</td><td><select id="BankCode"><option id="629">PUI BANK</option><option id="112">KASIKORN</option></select></td>
 </tr>
-<tr><td colspan='2'><input type="button" id="Cancel" value="ยกเลิก"><input type="submit" id="Submit" value="เพิ่ม" onclick="submitdata()"></td></tr>
+<tr><td colspan='2'><input type="button" id="Cancel" value="ยกเลิก" onclick='window.location.assign("http://192.168.1.113/transfer.html")'><input type="submit" id="Submit" value="เพิ่ม" onclick="submitdata()"></td></tr>
 <table>
 </form>
 </body>
