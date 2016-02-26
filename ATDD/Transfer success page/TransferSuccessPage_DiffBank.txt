@@ -11,7 +11,7 @@ ${DestinationAccount}    112805362
 ${Amount}    7,250.00
 ${Fee}    15.00
 ${Balance}    92,735.00
-${Notificationmsg}
+${Notificationmsg}    โอนสำเร็จจ้า
 #${TransferDateTime}
 
 *** Testcases ***
