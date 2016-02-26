@@ -23,5 +23,6 @@
     $query2 = 'UPDATE '.$usertable.' SET '.$yourfield.'=50000 WHERE account_id=6292181176';
     $conn->query($query2);
     $query3 = 'UPDATE '.$usertable.' SET '.$yourfield.'=5 WHERE account_id=112805362';
+    $conn->query($query3);
    $conn->close();
 ?>
