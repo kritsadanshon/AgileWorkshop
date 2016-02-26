@@ -8,16 +8,16 @@
 <body align="center">
 
 <h1>TRANSFER</h1>
-<form id="transfer" name="transfer" method="post" action="transfersuccess.php">
+<form id="transfer" name="transfer" method="get" action="transaction_transfer.php">
 	<table align="center" style="width:50%">
 	<tr>
 		<td>บัญชีตัวเอง : </td>
-		<td><input name="owner" type="text"></td>
+		<td><input id="owner" name="accountNumberForm" type="text"></td>
 	</tr>
 	<tr></tr>
 	<tr>
 		<td>โอนไป : </td>
-		<td><select name="accountList" style="width:300px;" align="left">
+		<td><select id="accountList" name="accountNumberTo" style="width:300px;" align="left">
 			<option value="account1" style="background: url(http://192.168.1.113/logo.jpg)">ประโยชน์  รุจิ  กสิกรไทย หัวหิน 112805362</option>
 			<option value="account2" style="background-image:url(http://192.168.1.113/logo.jpg);">สมเกียรติ ปุ๋ยสูงเนิน PUIBANK 629218362</option>
 		</select> 
@@ -27,7 +27,7 @@
 	<tr></tr>
 	<tr>
 		<td>จำนวนเงิน : </td>
-		<td><input name="amount" type="text" align="left"> บาท</td>
+		<td><input id="amount" name="moneyTransfer" type="text" align="left"> บาท</td>
 	</tr>
 	
 	</table>
