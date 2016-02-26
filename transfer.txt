@@ -1,0 +1,24 @@
+*** Settings ***
+
+Library           Selenium2Library
+
+
+*** Variables ***
+
+
+*** Test Cases ***
+Open Browser
+    Open Browser    http://192.168.1.113   chrome
+    Wait Until Page Contains Element   id=accountList
+    Click Element    id=accountList
+    Wait Until Page Contains Element    id=account1 
+    Input Text    id=account1 
+    Wait Until Page Contains Element   id=money
+    Input Text    id=money   3500
+    Wait Until Page Contains Element   id=transferbutton
+    Click Button    id=transferbutton
+
+  
+
+
+*** Keywords ***
